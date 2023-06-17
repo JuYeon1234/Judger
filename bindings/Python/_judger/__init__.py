@@ -82,4 +82,4 @@ def run(max_cpu_time,
     print(err)
     if err:
         raise ValueError("Error occurred while calling judger: {}".format(err))
-    return json.loads(out.decode("utf-8"))
+    return json.loads(out.decode("utf-8")),  err if err else None
