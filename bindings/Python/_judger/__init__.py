@@ -81,5 +81,6 @@ def run(max_cpu_time,
     out, err = proc.communicate()
     print(err)
     if err:
+        err_str = err.decode("utf-8")
         raise ValueError("Error occurred while calling judger: {}".format(err))
-    return json.loads(out.decode("utf-8")),  err if err else None
+    return json.loads(out.decode("utf-8")),  err.decode("utf-8")
