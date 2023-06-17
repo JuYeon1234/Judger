@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "github"]
+	url = https://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@github.com/JuYeon1234/Judger.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+[remote "origin"]
+	url = https://github.com/JuYeon1234/Judger.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
